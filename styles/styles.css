@@ -29,7 +29,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .list-group-item:hover {
-    background-color: #f8f9fa;
+    background-color: #e3e7eb;
 }
 .list-group-item h5 {
     color: #007bff;
