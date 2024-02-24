@@ -44,11 +44,12 @@ $fuentes_pagina = array_slice($sources['sources'], $indice_inicio, $fuentes_por_
                         <p class="mb-1"><?php echo $source['description']; ?></p>
                         <a href="<?php echo $source['url']; ?>" class="btn btn-link btn-sm">see more...</a>
                         <br>
-                        <small class="text-muted">Categoría: <?php echo $source['category']; ?> | Idioma: <?php echo $source['language']; ?> | País: <?php echo $source['country']; ?></small>
                         <?php
                         $autor = getRandomUser();
                         ?>
-                        <p class="text-muted mt-2">Author: <?php echo ucfirst($autor['name']['first']) . ' ' . ucfirst($autor['name']['last']); ?></p>
+                        <small class="text-muted">Category: <?php echo $source['category']; ?> | Languaje: <?php echo $source['language']; ?>  | Author: <?php echo ucfirst($autor['name']['first']) . ' ' . ucfirst($autor['name']['last']); ?></small>
+                        
+                        
                     </li>
                 <?php endforeach; ?>
             </ul>
